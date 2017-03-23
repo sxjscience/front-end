@@ -5,8 +5,8 @@
 <title>Magic Wand Test</title>
 <script src="magic-wand-min.js"></script>
 <script src="jquery-3.2.0.min.js"></script>
-<script src="index.js"></script>
 <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+<script src="index.js"></script>
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -14,7 +14,8 @@
     <div class="button" onclick="uploadClick()">Upload image and click on it</div>
     <div class="button" onclick="trace()">Create polygons by current selection</div>
     <!-- <div class="button" onclick="save()">Save mask</div> -->
-    <button id="PostRequest" type="button" onclick="save()"> post request </button>
+    <div class="button" onclick="save()">post request</div>
+    <!-- <button id="PostRequest" type="button" onclick="save()"> post request </button> -->
     <p id="WaitResponse"> wait for response </p>
     <input id="file-upload" type="file" accept="image/*" onchange="imgChange(this)" />
 </div>
