@@ -2,18 +2,25 @@ function save(){
     // var test = JSON.stringify(mask.data)
     // var TestArray = [1,2,3];
     // uriContent = "data:application/octet-stream," + encodeURIComponent(TestArray);
-    $(document).ready(function(){
-        $("#PostRequest").click(function(){
-            document.getElementById("WaitResponse").innerHTML = "post"
-            // alert("post")
-            $.post("http://127.0.0.1:5000",
+    document.getElementById("WaitResponse").innerHTML = "post"
+    $.post("http://127.0.0.1:5000",
                 {name:"Derek"},
                 function(data, status){
                     alert("get response " + status)
                     document.getElementById("WaitResponse").innerHTML = data
                 });
-        });
-    });    
+    // $(document).ready(function(){
+    //     $("#PostRequest").click(function(){
+    //         document.getElementById("WaitResponse").innerHTML = "post"
+    //         alert("post")
+    //         $.post("http://127.0.0.1:5000",
+    //             {name:"Derek"},
+    //             function(data, status){
+    //                 alert("get response " + status)
+    //                 document.getElementById("WaitResponse").innerHTML = data
+    //             });
+    //     });
+    // });    
     // newWindow = window.open(uriContent, 'NewWindow');
 }
 

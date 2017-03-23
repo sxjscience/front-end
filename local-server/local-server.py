@@ -1,9 +1,9 @@
 from flask import Flask, request, json, Response
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return "HelloWorld!"
+# @app.route("/")
+# def hello():
+#     return "HelloWorld!"
 
 @app.route("/hello2")
 def hello2():
